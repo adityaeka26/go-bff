@@ -1,0 +1,23 @@
+services:
+  user-db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: aditya
+      POSTGRES_PASSWORD: aditya
+      POSTGRES_DB: user
+    ports:
+      - 5432:5432
+    volumes:
+      - ./docker-data/user-db:/var/lib/postgresql/data
+    restart: always
+  order-db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: aditya
+      POSTGRES_PASSWORD: aditya
+      POSTGRES_DB: order
+    ports:
+      - 5433:5432
+    volumes:
+      - ./docker-data/order-db:/var/lib/postgresql/data
+    restart: always
