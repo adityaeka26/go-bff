@@ -42,7 +42,7 @@ services:
   bff-service:
     build: ./services/bff
     ports:
-      - 3000:3000
+      - 3007:3000
     depends_on:
       - order-db
     env_file:
