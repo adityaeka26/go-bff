@@ -5,6 +5,7 @@
 Backend for Frontend (BFF) is an architectural pattern where a separate backend service is created specifically for each frontend (or type of frontend) in an application. This allows for a more tailored experience for different types of clients, such as web, mobile, or desktop applications. Each frontend interacts with its respective backend, which in turn communicates with the core backend services or APIs.
 
 ## Deployed URL
+[https://bff.adityaeka.my.id/web/order/user/1](https://bff.adityaeka.my.id/web/order/user/1)
 
 ## API Doc
 [Postman Collection](postman-collection.json)
