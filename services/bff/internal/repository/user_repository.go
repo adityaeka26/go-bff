@@ -3,8 +3,8 @@ package repository
 import (
 	"context"
 
-	"github.com/adityaeka26/go-bff/bff/web/config"
-	pbUser "github.com/adityaeka26/go-bff/bff/web/internal/repository/user_proto"
+	"github.com/adityaeka26/go-bff/services/bff/config"
+	pbUser "github.com/adityaeka26/go-bff/services/bff/internal/repository/user_proto"
 	pkgError "github.com/adityaeka26/go-pkg/error"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"

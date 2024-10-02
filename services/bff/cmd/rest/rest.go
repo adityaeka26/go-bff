@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/adityaeka26/go-bff/bff/web/config"
-	"github.com/adityaeka26/go-bff/bff/web/internal/handler"
-	"github.com/adityaeka26/go-bff/bff/web/internal/usecase"
+	"github.com/adityaeka26/go-bff/services/bff/config"
+	"github.com/adityaeka26/go-bff/services/bff/internal/handler"
+	"github.com/adityaeka26/go-bff/services/bff/internal/usecase"
 	"github.com/adityaeka26/go-pkg/graceful_shutdown"
 	"github.com/adityaeka26/go-pkg/logger"
 	pkgValidator "github.com/adityaeka26/go-pkg/validator"

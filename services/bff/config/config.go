@@ -5,12 +5,13 @@ import (
 )
 
 type EnvConfig struct {
-	AppEnv          string `mapstructure:"APP_ENV"`
-	AppName         string `mapstructure:"APP_NAME"`
-	RestPort        string `mapstructure:"REST_PORT"`
-	AppVersion      string `mapstructure:"APP_VERSION"`
-	GracefulPeriod  int    `mapstructure:"GRACEFUL_PERIOD"`
-	UserServiceHost string `mapstructure:"USER_SERVICE_HOST"`
+	AppEnv           string `mapstructure:"APP_ENV"`
+	AppName          string `mapstructure:"APP_NAME"`
+	RestPort         string `mapstructure:"REST_PORT"`
+	AppVersion       string `mapstructure:"APP_VERSION"`
+	GracefulPeriod   int    `mapstructure:"GRACEFUL_PERIOD"`
+	UserServiceHost  string `mapstructure:"USER_SERVICE_HOST"`
+	OrderServiceHost string `mapstructure:"ORDER_SERVICE_HOST"`
 }
 
 func Load(filename string) (*EnvConfig, error) {

@@ -1,4 +1,4 @@
-module github.com/adityaeka26/go-bff/bff/web
+module github.com/adityaeka26/go-bff/services/bff
 
 go 1.22.5
 

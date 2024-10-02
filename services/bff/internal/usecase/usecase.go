@@ -3,7 +3,7 @@ package usecase
 import (
 	"context"
 
-	"github.com/adityaeka26/go-bff/bff/web/internal/dto"
+	"github.com/adityaeka26/go-bff/services/bff/internal/dto"
 )
 
 type WebUsecase interface {

@@ -1,9 +1,9 @@
 package handler
 
 import (
-	"github.com/adityaeka26/go-bff/bff/web/config"
-	"github.com/adityaeka26/go-bff/bff/web/internal/dto"
-	"github.com/adityaeka26/go-bff/bff/web/internal/usecase"
+	"github.com/adityaeka26/go-bff/services/bff/config"
+	"github.com/adityaeka26/go-bff/services/bff/internal/dto"
+	"github.com/adityaeka26/go-bff/services/bff/internal/usecase"
 	pkgError "github.com/adityaeka26/go-pkg/error"
 	"github.com/adityaeka26/go-pkg/helper"
 	pkgValidator "github.com/adityaeka26/go-pkg/validator"
