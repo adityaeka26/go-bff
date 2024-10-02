@@ -41,20 +41,32 @@ func Execute() {
 
 	if config.AppEnv != "production" {
 		postgres.GetDb().Clauses(clause.OnConflict{
-			Columns:   []clause.Column{{Name: "name"}},
-			DoUpdates: clause.AssignmentColumns([]string{"email", "location"}),
+			Columns:   []clause.Column{{Name: "id"}},
+			DoUpdates: clause.AssignmentColumns([]string{"name", "email", "location"}),
 		}).Create(&model.User{
+			ID:       1,
 			Name:     "Aditya",
 			Email:    "aditya@adityaeka.my.id",
 			Location: "Jakarta, Indonesia",
 		})
 
 		postgres.GetDb().Clauses(clause.OnConflict{
-			Columns:   []clause.Column{{Name: "name"}},
-			DoUpdates: clause.AssignmentColumns([]string{"email", "location"}),
+			Columns:   []clause.Column{{Name: "id"}},
+			DoUpdates: clause.AssignmentColumns([]string{"name", "email", "location"}),
 		}).Create(&model.User{
+			ID:       2,
 			Name:     "Eka",
 			Email:    "eka@adityaeka.my.id",
+			Location: "Tulungagung, Indonesia",
+		})
+
+		postgres.GetDb().Clauses(clause.OnConflict{
+			Columns:   []clause.Column{{Name: "id"}},
+			DoUpdates: clause.AssignmentColumns([]string{"name", "email", "location"}),
+		}).Create(&model.User{
+			ID:       3,
+			Name:     "Bagas",
+			Email:    "bagas@adityaeka.my.id",
 			Location: "Tulungagung, Indonesia",
 		})
 	}
