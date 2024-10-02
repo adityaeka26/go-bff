@@ -21,3 +21,30 @@ services:
     volumes:
       - ./docker-data/order-db:/var/lib/postgresql/data
     restart: always
+  user-service:
+    build: ./services/user
+    ports:
+      - 8000:8000
+    depends_on:
+      - user-db
+    env_file:
+      - ./services/user/.env.docker
+    restart: always
+  order-service:
+    build: ./services/order
+    ports:
+      - 8001:8001
+    depends_on:
+      - order-db
+    env_file:
+      - ./services/order/.env.docker
+    restart: always
+  bff-service:
+    build: ./services/bff
+    ports:
+      - 3000:3000
+    depends_on:
+      - order-db
+    env_file:
+      - ./services/bff/.env.docker
+    restart: always
