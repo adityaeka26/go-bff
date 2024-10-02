@@ -44,7 +44,8 @@ services:
     ports:
       - 3007:3000
     depends_on:
-      - order-db
+      - user-service
+      - order-service
     env_file:
       - ./services/bff/.env.docker
     restart: always
